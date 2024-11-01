@@ -25,6 +25,8 @@ urlpatterns = [
     path('demo',views.fun3),
     path('home',views.fun4),
     path('about',views.fun5),
-    path('contact',views.fun6)
+    path('contact',views.fun6),
+    path('display',views.display),
+    path('add_dtls',views.add_dtls)
 
 ]
