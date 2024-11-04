@@ -1,0 +1,34 @@
+    
+    .container1{
+        width: 50%;
+        margin: auto;
+    }
+
+
+
+    .container{
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    th,td{
+        width: 180px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    th{
+        background-color: black;
+        color: aqua;
+    }
+
+    input{
+        background-color: black;
+        color: white;
+    }
+
+    .submitbtn{
+        background-color:cornflowerblue;
+        color: white ;
+    }

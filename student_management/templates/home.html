@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+<div class="container1">
+    <h1>HOME...</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="number" name="roll_no" placeholder="Roll No" id="">
+        <input type="text" name="name" placeholder="Name" id="">
+        <input type="number" name="age" placeholder="Age" id="">
+        <input class='submitbtn' type="submit" value="Add">
+    </form>
+</div>
+
+    <div class="container">
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        {% for std in students %}
+        <tr>
+            <td>{{std.roll_no}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.age}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
