@@ -7,3 +7,7 @@ class Student(models.Model):
     # name=models.CharField(max_length=20)
     name=models.TextField()
     age=models.IntegerField()
+
+# to display the name in admin panel
+    def __str__(self):
+        return self.name
